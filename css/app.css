@@ -21,3 +21,9 @@ a .dropdown-item.active, .dropdown-item:active {
     text-decoration: none;
     background-color: #138496;
 }
+
+@media (max-width: 576px) {
+    #about h1 {
+        font-size: 4rem;
+    }
+}
