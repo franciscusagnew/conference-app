@@ -9,26 +9,69 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/app.css">
 
-    <title>Conference App</title>
+    <title>The Conference App</title>
   </head>
   <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand order-1 mr-0" href="https://github.com/franciscusagnew/conference-app" target="_blank">GitHub</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#speakers">Speakers</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#schedule">Schedule</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Schedule</a>
+            </li>
+          </ul>
+        </div>
+      </div><!-- /container -->
+    </nav><!-- /Navbar -->
+
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid bg-info text-white">
+      <div class="container text-sm-center pt-5">
+        <h1 class="display-2">The Conference App</h1>
+        <hr>
+        <p class="lead">The Conference App is a single-page web application that was develpoed using Bootstrap 4 web application framework</p>
+        <hr>
+      </div>
+    </div><!-- /Jumbotron -->
+
     <div class="container pt-4">
       <!-- About -->
       <div class="row">
         <div class="col-lg order-lg-2">
           <h3 class="mb-4">About The Conference</h3>
+          <hr>
           <img class="mb-4 img-fluid rounded d-none d-sm-block" src="https://picsum.photos/1024/436/?image=864" alt="San Jose, CA">
           <p>The innovative city of San Jose, California will be the hosting the Conference!</p>
           <p>Discover new technology to expand your knowledge as a developer. Learn about best practices to use when developing web applications from a lineup of industry professional speakers.</p>
         </div>
         <div class="col-lg order-lg-1">
           <h3 class="mb-4">The Speakers</h3>
+          <hr>
           <p>Want to meet and network with some of the best and brightest experts, developers, and hackers in the tech industry from around the world?</p>
           <p>Our speaker lineup was just annouced, and the response has been phenominial, so better hurry and grab your tickets before we are sold out!</p>
           <p>The Conference is going to be one of the most spectacular tech conferences of the decade... so you don't want to miss it!</p>
         </div>
         <div class="col-lg order-lg-3">
           <h3 class="mb-4">Topics Include</h3>
+          <hr>
           <ul>
               <li><strong>Node.js</strong>: JavaScript runtime</li>
               <li><strong>React</strong>: JavaScript library for user interfaces</li>
@@ -42,11 +85,13 @@
 
       <!-- Speakers -->
       <h2 class="display-4 text-center my-5 text-muted">Speakers</h2>
+      <hr>
       [Speaker Bios go here]
       <!-- /Speakers -->
 
       <!-- Schedule -->
       <h2 class="display-4 text-center my-5 text-muted">Schedule</h2>
+      <hr>
       [Conference schedule go here]
       <!-- /Schedule -->
 
