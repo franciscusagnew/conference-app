@@ -11,7 +11,7 @@
 
     <title>The Conference App</title>
   </head>
-  <body>
+  <body id="home">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
@@ -41,10 +41,14 @@
 
     <!-- Jumbotron -->
     <div class="jumbotron jumbotron-fluid bg-info text-white">
-      <div class="container text-sm-center pt-5">
+      <div id="about" class="container text-sm-center pt-5">
         <h1 class="display-2">The Conference App</h1>
         <hr>
         <p class="lead">The Conference App is a single-page web application that was develpoed using Bootstrap 4 web application framework</p>
+        <div class="btn-group mt-4" role="group" aria-label="Callout buttons">
+          <button type="button" class="btn btn-dark btn-lg">Register Now</button>
+          <a href="#speakers" class="btn btn-light btn-lg">See Speakers</a>
+        </div>
         <hr>
       </div>
     </div><!-- /Jumbotron -->
@@ -81,16 +85,19 @@
       </div><!-- /About -->
 
       <!-- Speakers -->
-      <h2 class="display-4 text-center my-5 text-muted">Speakers</h2>
+      <h2 id="speakers" class="display-4 text-center my-5 text-muted">Speakers</h2>
       <hr>
       [Speaker Bios go here]
       <!-- /Speakers -->
 
       <!-- Schedule -->
-      <h2 class="display-4 text-center my-5 text-muted">Schedule</h2>
+      <h2 id="schedule" class="display-4 text-center my-5 text-muted">Schedule</h2>
       <hr>
       [Conference schedule go here]
       <!-- /Schedule -->
+
+      <!-- Callout Button -->
+      <button type="button" class="btn btn-outline-info btn-lg d-block mx-auto my-5">Register Now</button>
 
       <!-- signup form -->
       <hr>
