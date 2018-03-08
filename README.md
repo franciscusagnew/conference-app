@@ -1,5 +1,5 @@
-Conference App
-==============
+The Conference App
+==================
 
 This repository contains the source code for The Conference App.
 
