@@ -1,9 +1,9 @@
 Conference App
 ==============
 
-This repository contains the source code for a Conference App.
+This repository contains the source code for The Conference App.
 
 
-For more information see the [Conference App](https://franciscusagnew.github.io/conference-app/).
+See [The Conference App](https://franciscusagnew.github.io/conference-app/) in action!
 
 [Franciscus Agnew](http://www.franciscusagnew.com)
