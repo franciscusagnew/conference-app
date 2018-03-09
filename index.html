@@ -5,14 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+    <!-- CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/app.css">
 
     <title>The Conference App</title>
   </head>
+
   <body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
-    <!-- Navbar -->
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
         <a class="navbar-brand order-1 mr-0" href="https://github.com/franciscusagnew/conference-app" target="_blank">GitHub</a>
@@ -36,10 +37,10 @@
               </li>
             </ul>
         </div>
-      </div><!-- /container -->
-    </nav><!-- /Navbar -->
+      </div>
+    </nav><!-- /navbar -->
 
-    <!-- Jumbotron -->
+    <!-- jumbotron -->
     <div class="jumbotron jumbotron-fluid bg-info text-white text-center">
       <div id="about" class="container text-sm-center pt-5">
         <h1 class="display-2">The Conference App</h1>
@@ -51,10 +52,10 @@
         </div>
         <hr>
       </div>
-    </div><!-- /Jumbotron -->
+    </div><!-- /jumbotron -->
 
+    <!-- about -->
     <section id="about" class="container py-4">
-      <!-- About -->
       <div class="row">
         <div class="col-lg order-lg-2">
           <h3 class="mb-4">About The Conference</h3>
@@ -85,11 +86,11 @@
           </div>
         </div>
       </div>
-    </section><!-- /About -->
+    </section><!-- /about -->
 
+    <!-- speakers -->
     <section id="speakers" class="container-fluid bg-light py-4">
       <div class="container">
-        <!-- Speakers -->
         <h2 class="display-4 text-center my-5 text-muted">Speakers</h2>
         <hr>
         <div class="row">
@@ -152,15 +153,15 @@
               </div>
             </div>
           </div>
-        </div><!-- /speakers -->
+        </div>
       </div>
-    </section>
+    </section><!-- /speakers -->
 
+    <!-- schedule -->
     <section id="schedule" class="container-fluid py-4">
       <div class="container">
         <h2 class="display-4 text-muted text-center my-5">Schedule</h2>
         <hr>
-        <!-- schedule -->
         <ul class="list-group">
           <li class="list-group-item">
             <div class="d-flex justify-content-between">
@@ -211,14 +212,14 @@
             </div>
             <p class="mb-1">Json Babel</p>
           </li>        
-        </ul><!-- /schedule -->
+        </ul>
       </div>
-    </section>
+    </section><!-- /schedule -->
     
+    <!-- callout -->
     <section id="callout" class="container-fluid py-4">
       <div class="container">
-        <!-- Callout Button -->
-        <button type="button" class="btn btn-outline-info btn-lg d-block mx-auto my-5" data-toggle="modal" data-target="#register">Register Now</button><!-- signup form -->
+        <button type="button" class="btn btn-outline-info btn-lg d-block mx-auto my-5" data-toggle="modal" data-target="#register">Register Now</button>
         <hr>
 
         <div class="row text-muted py-4">
@@ -226,19 +227,21 @@
             <p><strong>About The Conference App</strong></p>
             <p>The Conference App is a single-page web application that was develpoed using Bootstrap 4 web application framework.</p>
           </div>
+
+          <!-- signup form -->
           <div class="col-md  col-xl-5 ml-auto">
-            <p><strong>Sign Up For The Conference App Newsletter!</strong></p>
+            <p><strong>Sign Up For Our Newsletter!</strong></p>
             <div class="input-group">
               <input type="text" class="form-control" placeholder="Email">
               <span class="input-group-btn">
                 <button class="btn btn-info" type="button">Sign up</button>
               </span>
             </div>
-          </div>
+          </div><!-- /signup form -->
         </div>
       </div>
     </section>
-    <hr><!-- /signup form -->
+    <hr><!-- /callout -->
     
     <!-- footer -->
     <section  id="footer" class="container-fluid bg-dark text-white py-4">
@@ -276,15 +279,14 @@
         </div>
         <div class="row text-center">
           <div class="col-sm">
-            <small>&copy; 2018 The Conference App by <a class="portfolio-link" href="http://franciscusagnew.com" target="_blank">Franciscus Agnew</a></small>
+            <small>2018 The Conference App by <a class="portfolio-link" href="http://franciscusagnew.com" target="_blank">Franciscus Agnew</a></small>
           </div>
         </div>
-      </div><!-- /footer -->
-    </section><!-- /container -->
+      </div>
+    </section><!-- /footer -->
 
-    <!--=====================================
-     FORM MODAL
-    =====================================-->
+  
+    <!-- registration modal -->
     <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
       <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -294,6 +296,8 @@
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
+
+          <!-- modal body -->
           <div class="modal-body">
             <!-- registration form -->
             <form>
@@ -323,6 +327,7 @@
                 </select>
               </div>
               <hr class="my-4">
+
               <h5>Which Topics Interest You Most?</h5>
               <div class="form-check">
                 <div class="custom-control custom-checkbox">
@@ -355,6 +360,8 @@
                 </div>
               </div>
               <hr class="my-4">
+
+              <!-- payment info -->
               <h5 class="my-4">Payment Info:</h5>
               <div class="form-row">
                 <div class="col-lg-6 form-group">
@@ -371,11 +378,13 @@
                   <label for="cvv">CVV:</label>
                   <input class="form-control" id="cvv" type="text">
                 </div>
-              </div>
-
+              </div><!-- /payment info -->
+              
+              <!-- expiration -->
               <div class="form-row">
                 <label for="expo-date" class="col-lg-12">Expiration Date:</label>
 
+                <!-- expiration month -->
                 <div class="form-group col-lg-8">
                   <select class="custom-select form-control" id="exp-month">
                     <option value="1">1 - January</option>
@@ -391,33 +400,30 @@
                     <option value="11">11 - November</option> 
                     <option value="12">12 - December</option>
                   </select>
-                </div>
+                </div><!-- /expiration month -->
 
+                <!-- expiration year -->
                 <div class="form-group col-lg">
                   <select class="custom-select form-control" id="exp-year">
-                    <option value="2016">2016</option>
-                    <option value="2017">2017</option>
                     <option value="2018">2018</option>
                     <option value="2019">2019</option>
                     <option value="2020">2020</option>
                     <option value="2020">2021</option>
                     <option value="2020">2022</option>
-                    <option value="2020">2023</option>
-                    <option value="2020">2024</option>
-                    <option value="2020">2025</option>
-                    <option value="2020">2026</option>
                   </select>  
-                </div>
-              </div>
+                </div><!-- expiration year -->
+              </div><!-- expiration -->
             </form><!-- /registration form -->
-          </div>
+          </div><!-- /modal body -->
+
+          <!-- modal footer -->
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             <button type="button" class="btn btn-info">Register</button>
-          </div>
+          </div><!-- modal footer -->
         </div>
       </div>
-    </div>
+    </div><!-- /registration modal -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
