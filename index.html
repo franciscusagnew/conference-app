@@ -11,7 +11,7 @@
 
     <title>The Conference App</title>
   </head>
-  <body id="home">
+  <body id="home" data-spy="scroll" data-target=".navbar" data-offset="50">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
       <div class="container">
@@ -46,7 +46,7 @@
         <hr>
         <p class="lead">The Conference App is a single-page web application that was develpoed using Bootstrap 4 web application framework</p>
         <div class="btn-group mt-4" role="group" aria-label="Callout buttons">
-          <button type="button" class="btn btn-dark btn-lg">Register Now</button>
+          <button type="button" class="btn btn-dark btn-lg" data-toggle="modal" data-target="#register">Register Now</button>
           <a href="#speakers" class="btn btn-light btn-lg">View Speakers</a>
         </div>
         <hr>
@@ -218,7 +218,7 @@
     <section id="callout" class="container-fluid py-4">
       <div class="container">
         <!-- Callout Button -->
-        <button type="button" class="btn btn-outline-info btn-lg d-block mx-auto my-5">Register Now</button><!-- signup form -->
+        <button type="button" class="btn btn-outline-info btn-lg d-block mx-auto my-5" data-toggle="modal" data-target="#register">Register Now</button><!-- signup form -->
         <hr>
 
         <div class="row text-muted py-4">
@@ -281,6 +281,143 @@
         </div>
       </div><!-- /footer -->
     </section><!-- /container -->
+
+    <!--=====================================
+     FORM MODAL
+    =====================================-->
+    <div class="modal fade" id="register" tabindex="-1" role="dialog" aria-labelledby="register form" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header bg-info text-white">
+            <h5 class="modal-title" id="exampleModalLabel">Registration Form:</h5>
+            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <!-- registration form -->
+            <form>
+              <div class="alert alert-info alert-dismissible fade show" role="alert">
+                <strong>Hurry!</strong> Early bird registration ends in three days.
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <h5 class="mb-4">Basic Info:</h5>
+              <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Name">
+              </div>
+              <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Email">
+              </div>
+              <div class="form-group">
+                <label for="role">Job Role:</label>
+                <select class="custom-select form-control" id="role">
+                  <option value="full stack js developer">Full Stack JavaScript Developer</option>
+                  <option value="front end developer">Front End Developer</option>
+                  <option value="back end developer">Back End Developer</option>
+                  <option value="designer">Designer</option>
+                  <option value="student">Student</option> 
+                </select>
+              </div>
+              <hr class="my-4">
+              <h5>Which Topics Interest You Most?</h5>
+              <div class="form-check">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="js-frameworks">
+                  <label class="custom-control-label" for="js-frameworks">JavaScript Frameworks</label>
+                </div>
+              </div>
+              <div class="form-check">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="js-libraries">
+                  <label class="custom-control-label" for="js-libraries">JavaScript Libraries</label>
+                </div>
+              </div>
+              <div class="form-check">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="node">
+                  <label class="custom-control-label" for="node">Node.js</label>
+                </div>
+              </div>
+              <div class="form-check">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="build-tools">
+                  <label class="custom-control-label" for="build-tools">Build Tools</label>
+                </div>
+              </div>
+              <div class="form-check">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="es2015">
+                  <label class="custom-control-label" for="es2015">ES2015</label>
+                </div>
+              </div>
+              <hr class="my-4">
+              <h5 class="my-4">Payment Info:</h5>
+              <div class="form-row">
+                <div class="col-lg-6 form-group">
+                  <label for="cc-num">Card Number:</label>
+                  <input class="form-control" id="cc-num" type="text">
+                </div>
+
+                <div class="col-lg form-group">
+                  <label for="zip">Zip Code:</label>
+                  <input class="form-control" id="zip" type="text">
+                </div>
+
+                <div class="col-lg form-group">
+                  <label for="cvv">CVV:</label>
+                  <input class="form-control" id="cvv" type="text">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <label for="expo-date" class="col-lg-12">Expiration Date:</label>
+
+                <div class="form-group col-lg-8">
+                  <select class="custom-select form-control" id="exp-month">
+                    <option value="1">1 - January</option>
+                    <option value="2">2 - February</option>
+                    <option value="3">3 - March</option>
+                    <option value="4">4 - April</option>
+                    <option value="5">5 - May</option>
+                    <option value="6">6 - June</option>
+                    <option value="7">7 - July</option>
+                    <option value="8">8 - August</option>
+                    <option value="9">9 - September</option>
+                    <option value="10">10 - October</option>
+                    <option value="11">11 - November</option> 
+                    <option value="12">12 - December</option>
+                  </select>
+                </div>
+
+                <div class="form-group col-lg">
+                  <select class="custom-select form-control" id="exp-year">
+                    <option value="2016">2016</option>
+                    <option value="2017">2017</option>
+                    <option value="2018">2018</option>
+                    <option value="2019">2019</option>
+                    <option value="2020">2020</option>
+                    <option value="2020">2021</option>
+                    <option value="2020">2022</option>
+                    <option value="2020">2023</option>
+                    <option value="2020">2024</option>
+                    <option value="2020">2025</option>
+                    <option value="2020">2026</option>
+                  </select>  
+                </div>
+              </div>
+            </form><!-- /registration form -->
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-info">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
