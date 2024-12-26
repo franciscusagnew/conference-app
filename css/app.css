@@ -114,8 +114,20 @@ a .dropdown-item.active,
     border-color: #138496;
 }
 
-@media (min-width: 576px) {
-    #about h1 {
-        font-size: 3.5rem;
+@include media-breakpoint-up(sm) {
+    h1 {
+        font-size: 1.2rem;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    h1 {
+        font-size: 1.4rem;
+    }
+}
+
+@include media-breakpoint-up(lg) {
+    h1 {
+        font-size: 1.6rem;
     }
 }
