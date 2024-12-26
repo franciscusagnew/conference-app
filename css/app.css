@@ -115,9 +115,6 @@ a .dropdown-item.active,
 }
 
 @media (min-width: 576px) {
-    .display-2 {
-        font-size: 2rem;
-    }
     #about h1 {
         font-size: 3.5rem;
     }
