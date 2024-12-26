@@ -114,7 +114,7 @@ a .dropdown-item.active,
     border-color: #138496;
 }
 
-@media (max-width: 576px) {
+@media (min-width: 576px) {
     .display-2 {
         font-size: 2rem;
     }
