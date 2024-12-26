@@ -1,7 +1,3 @@
-.container-fluid {
-    width: 100%;
-}
-
 .portfolio-link {
     color: #17a2b8;
 }
@@ -119,6 +115,9 @@ a .dropdown-item.active,
 }
 
 @media (max-width: 576px) {
+    h2 {
+        font-size: 2rem;
+    }
     #about h1 {
         font-size: 3.5rem;
     }
