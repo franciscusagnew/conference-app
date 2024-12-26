@@ -7,7 +7,7 @@ h2 {
 }
 
 .portfolio-link {
-    color: #17a2b8;
+    color: #29abe2;
 }
 
 .portfolio-link:hover {
@@ -38,7 +38,7 @@ a .dropdown-item:focus,
 .dropdown-item:hover {
     color: #343a40;
     text-decoration: none;
-    background-color: #17a2b8;
+    background-color: #29abe2;
 }
 
 a .dropdown-item.active,
@@ -49,34 +49,34 @@ a .dropdown-item.active,
 }
 
 .navbar-dark .navbar-brand:hover {
-    color: #17a2b8;
+    color: #29abe2;
 }
 
 .btn-outline-light:hover {
-    color: #17a2b8;
+    color: #29abe2;
     background-color: #343a40;
-    border-color: #17a2b8;
+    border-color: #29abe2;
 }
 
 .btn-outline-light:not(:disabled):not(.disabled).active,
 .btn-outline-light:not(:disabled):not(.disabled):active,
 .show>.btn-outline-light.dropdown-toggle {
-    color: #17a2b8;
+    color: #29abe2;
     background-color: #343a40;
-    border-color: #17a2b8;
+    border-color: #29abe2;
 }
 
 .form-control:focus {
     color: #495057;
     background-color: #fff;
-    border-color: #17a2b8;
+    border-color: #29abe2;
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, .25);
 }
 
 .custom-control-input:checked~.custom-control-label::after {
     color: #fff;
-    background-color: #17a2b8;
+    background-color: #29abe2;
 }
 
 .custom-control-input:focus~.custom-control-label::before {
@@ -85,32 +85,32 @@ a .dropdown-item.active,
 
 .custom-control-input:active~.custom-control-label::before {
     color: #fff;
-    background-color: #17a2b8;
+    background-color: #29abe2;
 }
 
 .custom-checkbox .custom-control-input:checked~.custom-control-label::before {
-    background-color: #17a2b8;
+    background-color: #29abe2;
 }
 
 .custom-checkbox .custom-control-input:indeterminate~.custom-control-label::before {
-    background-color: #17a2b8;
+    background-color: #29abe2;
 }
 
 .custom-radio .custom-control-input:checked~.custom-control-label::before {
-    background-color: #17a2b8;
+    background-color: #29abe2;
 }
 
 .custom-file-input:focus~.custom-file-control {
-    border-color: #17a2b8;
+    border-color: #29abe2;
     box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, .25);
 }
 
 .custom-file-input:focus~.custom-file-control::before {
-    border-color: #17a2b8;
+    border-color: #29abe2;
 }
 
 .custom-select:focus {
-    border-color: #17a2b8;
+    border-color: #29abe2;
     outline: 0;
     box-shadow: inset 0 1px 2px rgba(0, x rgba(23, 162, 184, 0.5);
 }
@@ -118,7 +118,7 @@ a .dropdown-item.active,
 .page-item.active .page-link {
     z-index: 1;
     color: #fff;
-    background-color: #17a2b8;
+    background-color: #29abe2;
     border-color: #138496;
 }
 
